@@ -1,0 +1,51 @@
+[
+  {
+    "name": "search",
+    "description": "Search Remotive's curated remote-only job board by free-text query, category slug, and/or company name. Returns job listings with title, company, location tags, salary range, job type, and apply URL.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "search": {
+          "type": "string",
+          "description": "Free-text — title / description"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category slug (e.g. \"software-dev\", \"design\")"
+        },
+        "company_name": {
+          "type": "string",
+          "description": "Filter to a specific company"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max jobs returned (default 25)"
+        }
+      }
+    }
+  },
+  {
+    "name": "list_categories",
+    "description": "All Remotive categories with slug and name.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "get_company",
+    "description": "Company profile + active listings by company slug.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "type": "string",
+          "description": "Remotive company slug"
+        }
+      },
+      "required": [
+        "slug"
+      ]
+    }
+  }
+]
