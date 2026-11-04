@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-remotive",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Remotive MCP — curated remote-only job board",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "remotive",
     "gatewaySlug": "remotive",
-    "sourceHash": "v1-5922728c5d364ffed61fedf67d92ec829fabd6ab5dcbf2496d4ac68199711dbd",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-82bdf3342989c339e5e982fe87e775a2548f8e00afa2bed7526c2f68114b4ecd",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
